@@ -1,0 +1,8 @@
+body {
+  background: url('./assets/home/background-home-desktop.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  height: 100vh;
+}

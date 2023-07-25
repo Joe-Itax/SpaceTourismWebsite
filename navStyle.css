@@ -1,0 +1,87 @@
+/*Importation des polices*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* box-shadow: 0 0 0 1px red inset; */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Bellefair', serif;
+}
+
+h5 {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+nav {
+  float: right;
+  display: flex;
+  padding: 2rem 5rem;
+  background-color: transparent;
+  backdrop-filter: blur(50px);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.7rem 1.5rem;
+  letter-spacing: 4.75px;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #979797;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid #fff;
+}
+
+nav ul li a .numNav {
+  font-weight: bold;
+  margin-right: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  nav {
+    float: right;
+    display: flex;
+    padding: 2rem 3rem;
+    backdrop-filter: blur(900px);
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.87rem 0rem;
+    letter-spacing: 4.75px;
+    margin-right: 1rem;
+  }
+  nav ul li a .numNav {
+    display: none;
+  }
+}
