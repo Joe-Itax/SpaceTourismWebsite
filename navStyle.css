@@ -49,8 +49,10 @@ header img.logo {
 header img.iconHamburger {
   position: absolute;
   z-index: 999;
-  top: 2rem;
-  right: 2rem;
+  top: 1.5rem;
+  right: 1rem;
+  transition: opacity 0.5s ease-out;
+  cursor: pointer;
   display: none;
 }
 
@@ -66,7 +68,17 @@ nav.navNormal {
 nav.navMobile {
   position: absolute;
   top: 0;
-  right: -100rem;
+  right: 0;
+  left: -100%;
+  backdrop-filter: blur(50px);
+  padding: 2rem;
+  height: 100vh;
+  width: 85%;
+  box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.1);
+  display: none;
+  overflow: hidden;
+  transition: left 0.5s ease-out, display 0.5s ease-out;
+
 }
 
 nav ul {
@@ -106,6 +118,12 @@ nav ul li a .numNav {
     margin-top: 0rem;
   }
 
+  header img.logo {
+    position: absolute;
+    top: 1rem;
+    margin-left: -1rem;
+  }
+
   nav.navNormal {
     float: right;
     display: flex;
@@ -121,28 +139,13 @@ nav ul li a .numNav {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   header img.iconHamburger {
     display: inherit;
-    position: absolute;
-    z-index: 999;
-    top: 2rem;
-    right: 1rem;
   }
 
   nav.navNormal {
     display: none;
-  }
-
-  nav.navMobile {
-    float: right;
-    right: 0;
-    display: flex;
-    padding: 2rem 3rem;
-    background-color: transparent;
-    backdrop-filter: blur(50px);
-    box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.1);
-    height: 100vh;
   }
 
   nav.navMobile ul {
@@ -155,7 +158,7 @@ nav ul li a .numNav {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 1rem 0rem;
+    padding: 0.4rem 0rem;
     letter-spacing: 4.75px;
   }
 
