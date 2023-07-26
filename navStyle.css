@@ -52,6 +52,11 @@ h5 {
   font-weight: 400;
 }
 
+p {
+  line-height: 1.8rem;
+  font-size: 1rem;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -100,7 +105,6 @@ nav.navMobile {
   display: none;
   overflow: hidden;
   transition: left 0.5s ease-out, display 0.5s ease-out;
-
 }
 
 nav ul {
