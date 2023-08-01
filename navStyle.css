@@ -26,6 +26,8 @@ h4 {
   font-family: 'Bellefair', sans-serif;
   text-transform: uppercase;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -57,39 +59,48 @@ p {
   font-size: 1rem;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5rem;
-  margin-top: 2rem;
-  padding-left: 2rem;
-  width: 100%;
-  position: relative;
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 150px;
+  height: 100%;
 }
 
-header img.logo {
-  position: absolute;
-  top: 1rem;
+header {
+  grid-column: 1 / span 12;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  z-index: 9999;
+}
+
+header>a {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 2;
+  align-self: center;
+  justify-self: end;
 }
 
 header img.iconHamburger {
-  position: absolute;
-  z-index: 999;
-  top: 1.5rem;
-  right: 1rem;
-  transition: opacity 0.5s ease-out;
   cursor: pointer;
+  grid-column: -3 / span 1;
+  grid-row: 2 / span 1;
+  align-self: center;
+  justify-self: center;
+  width: 45px;
+  z-index: 999;
   display: none;
 }
 
 nav.navNormal {
-  float: right;
-  display: flex;
-  padding: 2rem 9rem;
+  grid-column: -1 / span 7;
+  grid-row: 2 / span 2;
+  padding: 2rem 6rem;
   background-color: transparent;
   backdrop-filter: blur(50px);
   box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.1);
+  text-align: center;
 }
 
 nav.navMobile {
@@ -103,14 +114,12 @@ nav.navMobile {
   width: 85%;
   box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.1);
   display: none;
-  overflow: hidden;
-  transition: left 0.5s ease-out, display 0.5s ease-out;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 2.8rem;
+  gap: 3rem;
 }
 
 nav ul li {
@@ -122,7 +131,7 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 1.87rem 0;
+  padding: 1.4rem 0;
   letter-spacing: 4.75px;
 }
 
@@ -139,25 +148,55 @@ nav ul li a .numNav {
   margin-right: 0.7rem;
 }
 
-@media (max-width: 768px) {
-  header {
-    margin-top: 0rem;
+@media (max-width: 830px) {
+  nav.navNormal {
+    padding: 2rem 2.3rem;
   }
 
-  header img.logo {
-    position: absolute;
-    top: 1rem;
-    margin-left: -1rem;
+  nav ul {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  h5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 4.75px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  header .barHori {
+    display: none;
+  }
+
+  header>a {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-self: end;
   }
 
   nav.navNormal {
-    float: right;
-    display: flex;
-    padding: 1.9rem 3rem;
-  }
-
-  nav ul li a {
-    padding: 1.87rem 0rem;
+    grid-column: -1 / span 7;
+    grid-row: 1 / span 2;
   }
 
   nav ul li a .numNav {
@@ -165,7 +204,20 @@ nav ul li a .numNav {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 650px) {
+  nav.navNormal {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 580px) {
+  header>a {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    align-self: center;
+    justify-self: center;
+  }
+
   header img.iconHamburger {
     display: inherit;
   }
@@ -178,6 +230,10 @@ nav ul li a .numNav {
     display: flex;
     flex-direction: column;
     padding-top: 5rem;
+  }
+
+  nav.navMobile ul {
+    margin-bottom: 4rem;
   }
 
   nav.navMobile ul li a {
