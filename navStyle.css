@@ -110,7 +110,7 @@ nav.navMobile {
   left: -100%;
   backdrop-filter: blur(50px);
   padding: 2rem;
-  height: 100vh;
+  height: 100%;
   width: 85%;
   box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.1);
   display: none;
@@ -229,11 +229,7 @@ nav ul li a .numNav {
   nav.navMobile ul {
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
-  }
-
-  nav.navMobile ul {
-    margin-bottom: 4rem;
+    padding-top: 7rem;
   }
 
   nav.navMobile ul li a {

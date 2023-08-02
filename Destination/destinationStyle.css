@@ -157,10 +157,7 @@ main .pickTitle-box span {
   }
 
   .img-box img {
-    width: 90%;
-    align-self: center;
-    justify-content: center;
-    margin: 0 auto;
+    width: 15rem;
   }
 
   main .pickTitle-box {
@@ -177,3 +174,9 @@ main .pickTitle-box span {
     padding-top: 1rem;
   }
 }
+
+
+
+/* Notions élémentaires, 
+compétences professionnelle limitée, générale, avancée
+Bilingue ou langue maternelle */
