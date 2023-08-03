@@ -1,5 +1,6 @@
 body {
   background-image: url('../assets/crew/background-crew-desktop.jpg');
+  background-repeat: no-repeat;
   color: #fff;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 150px 30px 1fr 100px;
@@ -29,7 +30,7 @@ main .meetTitle-box h3 {
 
 main .meetTitle-box span,
 main .detail-box h4 {
-  color: #4e5058;
+  color: #999ca4;
 }
 
 main .meetTitle-box span {
@@ -44,6 +45,10 @@ main .detail-box {
   justify-self: center;
 }
 
+main .detail-box h4 {
+  padding: 5rem 0rem 1rem 0px;
+}
+
 main .detail-box h2 {
   font-size: 3rem;
 }
@@ -51,9 +56,41 @@ main .detail-box h2 {
 main .detail-box .text-crew {
   font-size: 1rem;
   width: 90%;
-  padding: 2rem 1rem 4rem 10px;
+  padding: 2rem 0rem 3rem 5px;
 }
 
+.crew-box {
+  grid-column: 2 / span 4;
+  grid-row: 2 / span 1;
+  display: flex;
+  padding: 2rem 0rem 4rem 5px;
+}
+
+.crew-box input {
+  -webkit-appearance: none;
+}
+
+.crew-box label {
+  width: 0.78rem;
+  height: 0.78rem;
+  border-radius: 50%;
+  background-color: #727376;
+  margin-right: 1.2rem;
+  cursor: pointer;
+  display: block;
+}
+
+.crew-box label:hover {
+  background-color: #bdb6b6;
+}
+
+.crew-box input:checked + label {
+  background-color: #fff;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                     bb                                     */
+/* -------------------------------------------------------------------------- */
 main .img-box {
   grid-column: -2/ 8;
   grid-row: 1 / span 2;
@@ -62,5 +99,71 @@ main .img-box {
 }
 
 main .img-box img {
-  width: 20rem;
+  width: 25rem;
+}
+
+@media (max-width: 890px) {
+  main .img-box img {
+    width: 22rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url('../assets/crew/background-crew-tablet.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 150px 30px 1fr 100px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 30px 1fr 1fr 1fr;
+  }
+
+  main .detail-box {
+    grid-column: 2 / span 10;
+    grid-row: 2 / span 1;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .detail-box h4 {
+    padding: 0.5rem 0;
+  }
+
+  main .detail-box .text-crew {
+    font-size: 1rem;
+    width: 80%;
+    text-align: center;
+    padding: 0.4rem 0rem 3rem 0px;
+  }
+
+  .crew-box {
+    grid-column: 2 / span 10;
+    grid-row: 4 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem 4rem 5px;
+  }
+
+  main .img-box {
+    grid-column: 2 / span 10;
+    grid-row: 3 / span 2;
+    align-self: end;
+    justify-self: center;
+  }
+
+  main .img-box img {
+    width: 18rem;
+  }
 }

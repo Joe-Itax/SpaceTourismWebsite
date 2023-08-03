@@ -28,7 +28,7 @@ main .pickTitle-box h3 {
 }
 
 main .pickTitle-box span {
-  color: #4e5058;
+  color: #999ca4;
   margin-right: 0.5rem;
   font-size: 1.2rem;
 }
@@ -59,13 +59,13 @@ main .pickTitle-box span {
 }
 
 .detail-box .destination-box label {
-  color: #d0d6f9;
+  color: #999ca4;
   cursor: pointer;
   transition: 0.3s all ease-in-out;
 }
 
 .detail-box .destination-box label:hover {
-  border-bottom: 2px solid #d0d6f9;
+  border-bottom: 2px solid #999ca4;
 }
 
 .detail-box .destination-box input {
