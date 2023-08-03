@@ -29,7 +29,7 @@ main .pickTitle-box h3 {
 
 main .pickTitle-box span {
   color: #4e5058;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   font-size: 1.2rem;
 }
 
@@ -59,21 +59,21 @@ main .pickTitle-box span {
 }
 
 .detail-box .destination-box label {
-  color: #D0D6F9;
+  color: #d0d6f9;
   cursor: pointer;
-  transition: .3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 .detail-box .destination-box label:hover {
-  border-bottom: 2px solid #D0D6F9;
+  border-bottom: 2px solid #d0d6f9;
 }
 
 .detail-box .destination-box input {
   -webkit-appearance: none;
-  transition: .3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
-.detail-box .destination-box input:checked+label {
+.detail-box .destination-box input:checked + label {
   border-bottom: 2px solid #fff;
   color: #fff;
 }
@@ -81,7 +81,7 @@ main .pickTitle-box span {
 .detail-box .text-destination {
   width: 90%;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #D0D6F9;
+  border-bottom: 1px solid #d0d6f9;
 }
 
 .detail-box .duree-box {
@@ -95,7 +95,7 @@ main .pickTitle-box span {
 }
 
 .detail-box .duree-box h5 {
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 @media (max-width: 890px) {
@@ -110,7 +110,7 @@ main .pickTitle-box span {
 
   main h3 {
     grid-column: 1 / 7;
-    margin-left: .8rem;
+    margin-left: 0.8rem;
   }
 
   .img-box {
@@ -126,7 +126,7 @@ main .pickTitle-box span {
   }
 
   .detail-box {
-    grid-column: 1/ span 12;
+    grid-column: 1 / span 12;
     grid-row: 3 / span 1;
     align-self: center;
     justify-self: center;
@@ -174,8 +174,6 @@ main .pickTitle-box span {
     padding-top: 1rem;
   }
 }
-
-
 
 /* Notions élémentaires, 
 compétences professionnelle limitée, générale, avancée

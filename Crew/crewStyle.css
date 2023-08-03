@@ -1,0 +1,66 @@
+body {
+  background-image: url('../assets/crew/background-crew-desktop.jpg');
+  color: #fff;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 150px 30px 1fr 100px;
+}
+
+main {
+  grid-column: 1 / span 12;
+  grid-row: 2 / span 3;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 30px 1fr;
+  width: 100%;
+  row-gap: 2rem;
+}
+
+main div.meetTitle-box {
+  grid-column: 2 / span 8;
+  grid-row: 1 / span 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+main .meetTitle-box h3 {
+  font-size: 1.2rem;
+}
+
+main .meetTitle-box span,
+main .detail-box h4 {
+  color: #4e5058;
+}
+
+main .meetTitle-box span {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+main .detail-box {
+  grid-column: 2 / span 4;
+  grid-row: 2 / span 1;
+  align-self: center;
+  justify-self: center;
+}
+
+main .detail-box h2 {
+  font-size: 3rem;
+}
+
+main .detail-box .text-crew {
+  font-size: 1rem;
+  width: 90%;
+  padding: 2rem 1rem 4rem 10px;
+}
+
+main .img-box {
+  grid-column: -2/ 8;
+  grid-row: 1 / span 2;
+  align-self: end;
+  justify-self: center;
+}
+
+main .img-box img {
+  width: 20rem;
+}
