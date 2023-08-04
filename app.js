@@ -41,7 +41,7 @@ function titanFunction() {
   textDestination.innerHTML = `The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.`;
   distanceKmh4.innerHTML = "1.6 Bil. km";
   tempsKmh4.innerHTML = "7 Years";
-  imagePlanet.src = "../assets/destination/image-mars.png";
+  imagePlanet.src = "../assets/destination/image-titan.png";
 }
 
 
