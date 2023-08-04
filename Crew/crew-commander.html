@@ -1,120 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../navStyle.css" />
-    <link rel="stylesheet" href="./crewStyle.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
-    <title>Frontend Mentor | Space tourism website</title>
-  </head>
 
-  <body>
-    <header>
-      <a href="../index.html"
-        ><img class="logo" src="../assets/shared/logo.svg" alt="Logo du site"
-      /></a>
-      <img
-        class="iconHamburger"
-        id="iconHamburger"
-        src="../assets/shared/icon-hamburger.svg"
-      />
-      <nav class="navNormal">
-        <ul>
-          <li>
-            <a href="../index.html"><span class="numNav">01</span>Home</a>
-          </li>
-          <li>
-            <a href="../Destination/destination-moon.html"
-              ><span class="numNav">02</span>Destination</a
-            >
-          </li>
-          <li>
-            <a href="../Crew/crew-commander.html" class="active"
-              ><span class="numNav">03</span>Crew</a
-            >
-          </li>
-          <li>
-            <a href="../Technologie/technology-vehicle.html"
-              ><span class="numNav">04</span>Technology</a
-            >
-          </li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../navStyle.css" />
+  <link rel="stylesheet" href="./crewStyle.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
 
-      <nav class="navMobile" id="navMobile">
-        <ul>
-          <li>
-            <a href="../index.html"><span class="numNav">01</span>Home</a>
-          </li>
-          <li>
-            <a href="../Destination/destination-moon.html"
-              ><span class="numNav">02</span>Destination</a
-            >
-          </li>
-          <li>
-            <a href="../Crew/crew-commander.html" class="active"
-              ><span class="numNav">03</span>Crew</a
-            >
-          </li>
-          <li>
-            <a href="../Technologie/technology-vehicle.html"
-              ><span class="numNav">04</span>Technology</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="meetTitle-box">
-        <span id="meetTitleSpan">02</span>
-        <h3 id="meetTitle">Meet Your Crew</h3>
-      </div>
-      <section class="detail-box">
-        <h4>Commander</h4>
-        <h2>Douglas Hurley</h2>
-        <p class="text-crew">
-          Douglas Gerald Hurley is an American engineer, former Marine Corps
-          pilot and former NASA astronaut. He launched into space for the third
-          time as commander of Crew Dragon Demo-2.
-        </p>
-        <div class="crew-box">
-          <div class="commander-box">
-            <input
-              type="radio"
-              id="commander"
-              value="Commander"
-              name="crew"
-              checked
-            />
-            <label for="commander"></label>
-          </div>
-          <div class="mission-box">
-            <input type="radio" id="mission" value="Mission" name="crew" />
-            <label for="mission"></label>
-          </div>
-          <div class="pilot-box">
-            <input type="radio" id="pilot" value="Pilot" name="crew" />
-            <label for="pilot"></label>
-          </div>
-          <div class="flight-box">
-            <input type="radio" id="flight" value="Flight" name="crew" />
-            <label for="flight"></label>
-          </div>
+<body>
+  <header>
+    <a href="../index.html"><img class="logo" src="../assets/shared/logo.svg" alt="Logo du site" /></a>
+    <img class="iconHamburger" id="iconHamburger" src="../assets/shared/icon-hamburger.svg" />
+    <nav class="navNormal">
+      <ul>
+        <li>
+          <a href="../index.html"><span class="numNav">01</span>Home</a>
+        </li>
+        <li>
+          <a href="../Destination/destination-moon.html"><span class="numNav">02</span>Destination</a>
+        </li>
+        <li>
+          <a href="../Crew/crew-commander.html" class="active"><span class="numNav">03</span>Crew</a>
+        </li>
+        <li>
+          <a href="../Technologie/technology-vehicle.html"><span class="numNav">04</span>Technology</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="navMobile" id="navMobile">
+      <ul>
+        <li>
+          <a href="../index.html"><span class="numNav">01</span>Home</a>
+        </li>
+        <li>
+          <a href="../Destination/destination-moon.html"><span class="numNav">02</span>Destination</a>
+        </li>
+        <li>
+          <a href="../Crew/crew-commander.html" class="active"><span class="numNav">03</span>Crew</a>
+        </li>
+        <li>
+          <a href="../Technologie/technology-vehicle.html"><span class="numNav">04</span>Technology</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="meetTitle-box">
+      <span id="meetTitleSpan">02</span>
+      <h3 id="meetTitle">Meet Your Crew</h3>
+    </div>
+    <section class="detail-box">
+      <h4>Commander</h4>
+      <h2>Douglas Hurley</h2>
+      <p class="text-crew">
+        Douglas Gerald Hurley is an American engineer, former Marine Corps
+        pilot and former NASA astronaut. He launched into space for the third
+        time as commander of Crew Dragon Demo-2.
+      </p>
+      <div class="crew-box">
+        <div class="commander-box">
+          <input type="radio" id="commander" value="Commander" name="crew" checked />
+          <label for="commander"></label>
         </div>
-      </section>
-      <section class="img-box">
-        <img
-          src="../assets/crew/image-douglas-hurley.png"
-          alt="Image du Commander"
-        />
-      </section>
-    </main>
-    <script src="../navScript.js"></script>
-  </body>
+        <div class="mission-box">
+          <input type="radio" id="mission" value="Mission" name="crew" />
+          <label for="mission"></label>
+        </div>
+        <div class="pilot-box">
+          <input type="radio" id="pilot" value="Pilot" name="crew" />
+          <label for="pilot"></label>
+        </div>
+        <div class="flight-box">
+          <input type="radio" id="flight" value="Flight" name="crew" />
+          <label for="flight"></label>
+        </div>
+      </div>
+    </section>
+    <section class="img-box">
+      <img src="../assets/crew/image-douglas-hurley.png" alt="Image du Commander" />
+    </section>
+  </main>
+  <script src="../navScript.js"></script>
+  <script src="../app.js"></script>
+</body>
+
 </html>

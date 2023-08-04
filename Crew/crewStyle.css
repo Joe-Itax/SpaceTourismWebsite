@@ -63,11 +63,13 @@ main .detail-box .text-crew {
   grid-column: 2 / span 4;
   grid-row: 2 / span 1;
   display: flex;
-  padding: 2rem 0rem 4rem 5px;
+  padding: 0rem 0rem 4rem 5px;
+  margin-top: -2rem;
 }
 
 .crew-box input {
   -webkit-appearance: none;
+  transition: 0.3s all ease-in-out;
 }
 
 .crew-box label {
@@ -78,13 +80,14 @@ main .detail-box .text-crew {
   margin-right: 1.2rem;
   cursor: pointer;
   display: block;
+  transition: 0.3s all ease-in-out;
 }
 
 .crew-box label:hover {
   background-color: #bdb6b6;
 }
 
-.crew-box input:checked + label {
+.crew-box input:checked+label {
   background-color: #fff;
 }
 
@@ -111,7 +114,6 @@ main .img-box img {
 @media (max-width: 768px) {
   body {
     background-image: url('../assets/crew/background-crew-tablet.jpg');
-    background-position: center center;
     background-repeat: no-repeat;
     color: #fff;
     grid-template-columns: repeat(12, 1fr);
@@ -119,9 +121,7 @@ main .img-box img {
   }
 
   main {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 30px 1fr 1fr 1fr;
+    grid-template-rows: 30px 1fr 1fr;
   }
 
   main .detail-box {
@@ -150,20 +150,25 @@ main .img-box img {
   .crew-box {
     grid-column: 2 / span 10;
     grid-row: 4 / span 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0rem 4rem 5px;
+    justify-self: flex-start;
+    align-self: center;
+    padding: 0;
   }
 
   main .img-box {
     grid-column: 2 / span 10;
-    grid-row: 3 / span 2;
+    grid-row: 3 / -1;
     align-self: end;
     justify-self: center;
   }
 
   main .img-box img {
     width: 18rem;
+  }
+}
+
+@media (max-width: 350px) {
+  main .img-box img {
+    width: 13rem;
   }
 }

@@ -1,3 +1,5 @@
+//Code JS pour la page Destination
+
 const principalTitle = document.getElementById("principalTitle");
 const textDestination = document.querySelector("div.text-destination p");
 const distanceKmh4 = document.querySelector("div.distance h4");

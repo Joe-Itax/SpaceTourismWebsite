@@ -88,7 +88,7 @@ header img.iconHamburger {
   grid-row: 2 / span 1;
   align-self: center;
   justify-self: center;
-  width: 45px;
+  width: 37px;
   z-index: 999;
   display: none;
 }
