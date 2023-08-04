@@ -52,19 +52,3 @@ const destination = () => {
 };
 
 destination();
-
-/** --------------------------------------------------- */
-//Code JS pour la page Crew
-const crew = () => {
-  const principalTitle = document.getElementById('principalTitle');
-  const textDestination = document.querySelector('div.text-destination p');
-  const distanceKmh4 = document.querySelector('div.distance h4');
-  const tempsKmh4 = document.querySelector('div.temps h4');
-  const imagePlanet = document.querySelector('section.img-box img');
-
-  const moon = document.getElementById('moon');
-  const mars = document.getElementById('mars');
-  const europa = document.getElementById('europa');
-  const titan = document.getElementById('titan');
-  //
-};
