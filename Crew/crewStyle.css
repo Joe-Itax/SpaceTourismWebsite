@@ -87,7 +87,7 @@ main .detail-box .text-crew {
   background-color: #bdb6b6;
 }
 
-.crew-box input:checked + label {
+.crew-box input:checked+label {
   background-color: #fff;
 }
 
@@ -103,6 +103,15 @@ main .img-box {
 
 main .img-box img {
   width: 23rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
 }
 
 @media (max-width: 890px) {
