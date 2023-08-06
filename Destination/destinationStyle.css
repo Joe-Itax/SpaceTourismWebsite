@@ -1,5 +1,7 @@
 body {
   background-image: url('../assets/destination/background-destination-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 150px 30px 1fr 100px;
   color: #fff;
@@ -73,7 +75,7 @@ main .pickTitle-box span {
   transition: 0.3s all ease-in-out;
 }
 
-.detail-box .destination-box input:checked + label {
+.detail-box .destination-box input:checked+label {
   border-bottom: 2px solid #fff;
   color: #fff;
 }

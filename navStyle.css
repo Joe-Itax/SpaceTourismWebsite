@@ -59,6 +59,10 @@ p {
   font-size: 1rem;
 }
 
+label {
+  font-family: 'Bellefair', sans-serif;
+}
+
 body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -213,13 +217,14 @@ nav ul li a .numNav {
 @media (max-width: 580px) {
   header>a {
     grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
+    grid-row: 2 / span 2;
     align-self: center;
     justify-self: center;
   }
 
   header img.iconHamburger {
     display: inherit;
+    grid-row: 2 / span 2;
   }
 
   nav.navNormal {

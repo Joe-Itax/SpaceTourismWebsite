@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../navStyle.css" />
-  <link rel="stylesheet" href="./technology.css" />
+  <link rel="stylesheet" href="./technologyStyle.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
   <title>Frontend Mentor | Space tourism website</title>
@@ -49,20 +49,39 @@
       </ul>
     </nav>
   </header>
-
-  03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Launch vehicle
-
-  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
-  payload from Earth's surface to space, usually to Earth orbit or beyond. Our
-  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
-  it's quite an awe-inspiring sight on the launch pad!
+  <main>
+    <div class="meetTitle-box">
+      <span id="meetTitleSpan">03</span>
+      <h3 id="meetTitle">Space Launch 101</h3>
+    </div>
+    <div class="technologyRadio-box">
+      <div class="vehicle-box">
+        <input type="radio" id="vehicle" value="Vehicle" name="technology" checked />
+        <label for="vehicle">1</label>
+      </div>
+      <div class="spaceport-box">
+        <input type="radio" id="spaceport" value="Spaceport" name="technology" />
+        <label for="spaceport">2</label>
+      </div>
+      <div class="capsule-box">
+        <input type="radio" id="capsule" value="Capsule" name="technology" />
+        <label for="capsule">3</label>
+      </div>
+    </div>
+    <section class="detail-box">
+      <h4>The technology...</h4>
+      <h2>Launch Vehicle</h2>
+      <p class="text-technology">
+        A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to
+        space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing
+        150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+      </p>
+    </section>
+    <section class="img-box">
+    </section>
+  </main>
+  <script src="../navScript.js"></script>
+  <script src="./technology.js"></script>
 </body>
 
 </html>
