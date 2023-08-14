@@ -1,5 +1,5 @@
 * {
-  box-shadow: 0 0 0 1px red inset;
+  /* box-shadow: 0 0 0 1px red inset; */
 }
 
 body {
@@ -79,7 +79,7 @@ main .technologyRadio-box label:hover {
   border-color: #fff;
 }
 
-main .technologyRadio-box input:checked+label {
+main .technologyRadio-box input:checked + label {
   background-color: #fff;
   border-color: #fff;
   color: #000;
@@ -96,7 +96,7 @@ main .detail-box {
 }
 
 main .detail-box h4 {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 main .detail-box h2 {
@@ -111,17 +111,15 @@ main .detail-box .text-technology {
 main .img-box {
   grid-column: -1 / span 3;
   grid-row: 1 / 4;
-  background: url("../assets/technology/image-launch-vehicle-portrait.jpg");
+  background: url('../assets/technology/image-launch-vehicle-portrait.jpg');
+  background-size: auto;
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center center;
   width: 23rem;
-  height: 100%;
+  height: 32rem;
   align-self: center;
   justify-self: center;
 }
-
-
 
 /*********************************************/
 @media (max-width: 900px) {
@@ -141,12 +139,11 @@ main .img-box {
 
 /*and (min-height: 850px) */
 @media (max-height: 840px) {
-  body {
+  /* body {
     background-repeat: no-repeat;
     background-size: inherit;
-  }
+  } */
 }
-
 
 @media (max-width: 768px) {
   body {
@@ -197,7 +194,6 @@ main {
   main .img-box {
     grid-column: 1 / span 12;
     grid-row: 2 / 3;
-    background: url("../assets/technology/image-launch-vehicle-landscape.jpg");
     background-position: center center;
     height: 19rem;
     width: 100%;
@@ -206,15 +202,13 @@ main {
   }
 }
 
-
-
-@media (max-width: 430px) {
+@media (max-width: 500px) {
   body {
     grid-template-rows: 100px 30px 1fr 100px;
   }
 
   main .detail-box h4 {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   main .detail-box h2 {

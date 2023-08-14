@@ -35,7 +35,6 @@ main section {
   padding-right: 20%;
 }
 
-
 main section * {
   margin-bottom: 1.4rem;
 }
@@ -54,8 +53,13 @@ main .boxBtnExplore {
 div.boxBtnExplore a {
   text-decoration: none;
   clip-path: circle(40%);
-  transition: all 0.7s ease-in-out;
+  padding: 4rem;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
 
+div.boxBtnExplore a:hover {
+  background-color: rgba(146, 130, 130, 0.7);
 }
 
 .btnHover p {
@@ -64,6 +68,7 @@ div.boxBtnExplore a {
   font-size: 1.4rem;
   text-transform: uppercase;
   text-align: center;
+  clip-path: circle(40%);
   padding: 6rem;
   background-color: #fff;
 }
