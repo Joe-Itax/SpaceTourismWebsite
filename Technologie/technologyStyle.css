@@ -137,91 +137,62 @@ main .img-box {
   }
 }
 
-/*and (min-height: 850px) */
-@media (max-height: 840px) {
-  /* body {
-    background-repeat: no-repeat;
-    background-size: inherit;
-  } */
-}
-
 @media (max-width: 768px) {
   body {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 150px 30px 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
-  /*
-main {
-  grid-column: 1 / span 12;
-  grid-row: 2 / span 2;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 30px 1fr 50px;
-}
-*/
   main {
-    grid-column: 1 / span 12;
-    grid-row: 2 / span 4;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 30px 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    row-gap: 1rem;
+    height: 100%;
+    /* row-gap: 1rem; */
     text-align: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
   }
 
   main .detail-box {
-    grid-column: 1 / span 12;
-    grid-row: 4 / -1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    margin: 0;
+    padding: 0;
   }
 
   main .technologyRadio-box {
-    grid-column: 1 / span 12;
-    grid-row: 3 / 4;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
     gap: 1.5rem;
   }
 
   main .img-box {
+    background: url('../assets/technology/image-launch-vehicle-landscape.jpg');
     grid-column: 1 / span 12;
     grid-row: 2 / 3;
+    background-repeat: no-repeat;
+    background-size: auto;
     background-position: center center;
-    height: 19rem;
+    height: 100%;
     width: 100%;
     align-self: center;
-    justify-self: center;
-  }
-}
-
-@media (max-width: 500px) {
-  body {
-    grid-template-rows: 100px 30px 1fr 100px;
+    order: 0;
   }
 
-  main .detail-box h4 {
-    font-size: 0.7rem;
+  .meetTitle-box {
+    margin-left: 1rem;
   }
-
-  main .detail-box h2 {
-    font-size: 1.7rem;
-  }
-
-  main .technologyRadio-box label {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  main .img-box {
-    background-position: center center;
-    height: 15rem;
+  .technologyRadio-box,
+  .detail-box {
+    order: 1;
   }
 }
