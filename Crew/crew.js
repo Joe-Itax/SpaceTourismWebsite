@@ -1,48 +1,52 @@
-//Code JS pour la page Crew
-const crew = () => {
+// Récupération des pièces depuis le fichier JSON
+async function getData() {
+  const reponse = await fetch('../data.json');
+  const data = await reponse.json();
+  console.log(data);
   const commander = document.getElementById('commander');
   const mission = document.getElementById('mission');
   const pilot = document.getElementById('pilot');
   const flight = document.getElementById('flight');
   /**------------------------------------- */
-  const titlePerson = document.querySelector('section.detail-box > h4');
+  const rolePerson = document.querySelector('section.detail-box > h4');
   const namePerson = document.querySelector('section.detail-box > h2');
   const textCrew = document.querySelector('p.text-crew');
   const imagePerson = document.querySelector('section.img-box img');
 
   function commanderFunction() {
-    titlePerson.innerHTML = 'Commander';
-    namePerson.innerHTML = 'Douglas Hurley';
-    textCrew.innerHTML = `Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third
-    time as commander of Crew Dragon Demo-2.`;
-    imagePerson.src = '../assets/crew/image-douglas-hurley.png';
+    rolePerson.innerHTML = data.crew[0].role;
+    namePerson.innerHTML = data.crew[0].name;
+    textCrew.innerHTML = data.crew[0].bio;
+    imagePerson.src = data.crew[0].images.png;
   }
 
+  /***--- */
   function missionFunction() {
-    titlePerson.innerHTML = 'Mission Specialist';
-    namePerson.innerHTML = 'Mark Shuttleworth';
-    textCrew.innerHTML = `Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.`;
-    imagePerson.src = '../assets/crew/image-mark-shuttleworth.png';
+    rolePerson.innerHTML = data.crew[1].role;
+    namePerson.innerHTML = data.crew[1].name;
+    textCrew.innerHTML = data.crew[1].bio;
+    imagePerson.src = data.crew[1].images.png;
   }
 
+  /**---- */
   function pilotFunction() {
-    titlePerson.innerHTML = 'Pilot';
-    namePerson.innerHTML = 'Victor Glover';
-    textCrew.innerHTML = `Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. `;
-    imagePerson.src = '../assets/crew/image-victor-glover.png';
+    rolePerson.innerHTML = data.crew[2].role;
+    namePerson.innerHTML = data.crew[2].name;
+    textCrew.innerHTML = data.crew[2].bio;
+    imagePerson.src = data.crew[2].images.png;
   }
 
+  /**----- */
   function flightFunction() {
-    titlePerson.innerHTML = 'Flight Engineer';
-    namePerson.innerHTML = 'Anousheh Ansari';
-    textCrew.innerHTML = `Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. `;
-    imagePerson.src = '../assets/crew/image-anousheh-ansari.png';
+    rolePerson.innerHTML = data.crew[3].role;
+    namePerson.innerHTML = data.crew[3].name;
+    textCrew.innerHTML = data.crew[3].bio;
+    imagePerson.src = data.crew[3].images.png;
   }
   /**-------------------------- */
   commander.addEventListener('change', commanderFunction);
   mission.addEventListener('change', missionFunction);
   pilot.addEventListener('change', pilotFunction);
   flight.addEventListener('change', flightFunction);
-};
-
-crew();
+}
+getData();
