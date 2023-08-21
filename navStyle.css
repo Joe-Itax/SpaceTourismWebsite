@@ -31,24 +31,24 @@ h4 {
 }
 
 h1 {
-  font-size: 9.375rem;
+  font-size: 8rem;
 }
 
 h2 {
-  font-size: 6.25rem;
+  font-size: 6rem;
 }
 
 h3 {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h5 {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 1.75rem;
+  font-size: 2rem;
   letter-spacing: 4.75px;
   text-transform: uppercase;
   font-weight: 400;
@@ -164,11 +164,11 @@ nav ul li a .numNav {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 
   h2 {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
   h3 {
@@ -215,6 +215,30 @@ nav ul li a .numNav {
 }
 
 @media (max-width: 580px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.7rem;
+  }
+
+  h3 {
+    font-size: 2.3rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: .8rem;
+    letter-spacing: 4.75px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
   header>a {
     grid-column: 2 / span 1;
     grid-row: 2 / span 2;
