@@ -1,29 +1,88 @@
 //Code JS pour la page Technology
 const imgBox = document.querySelector('section.img-box');
 const width = window.innerWidth; //Vérificateur de la taille de l'écran
-const technology = () => {
-  //Les boutons radio
-  const vehicle = document.getElementById('vehicle');
-  const spaceport = document.getElementById('spaceport');
-  const capsule = document.getElementById('capsule');
-  //La boite contenat l'image
+const img = document.createElement('img');
+imgBox.appendChild(img);
+
+//Les boutons radio
+const vehicle = document.getElementById('vehicle');
+const spaceport = document.getElementById('spaceport');
+const capsule = document.getElementById('capsule');
+
+async function getData() {
+  const response = await fetch('../data.json');
+  const data = await response.json();
+  console.log(data);
+  ////////////////////////////////////////
+  imgBox.appendChild(img);
+  img.src = data.technology[0].images.portrait;
+  img.alt = 'Image technology';
+  document.querySelector('section.detail-box > h2').innerHTML =
+    data.technology[0].name;
+  document.querySelector('p.text-technology').innerHTML =
+    data.technology[0].description;
+
+  if (width <= 768) {
+    img.src = data.technology[0].images.landscape;
+  } else {
+    img.src = data.technology[0].images.portrait;
+  }
 
   function vehicleFunction() {
     document.querySelector('section.detail-box > h2').innerHTML =
-      'Launch Vehicle';
-    document.querySelector(
-      'p.text-technology'
-    ).innerHTML = `See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and
-              come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing
-              sites.`;
+      data.technology[0].name;
+    document.querySelector('p.text-technology').innerHTML =
+      data.technology[0].description;
     if (width <= 768) {
-      imgBox.style.background =
-        "url('../assets/technology/image-launch-vehicle-landscape.jpg')";
+      img.src = data.technology[0].images.landscape;
     } else {
-      imgBox.style.background =
-        "url('../assets/technology/image-launch-vehicle-portrait.jpg')";
+      img.src = data.technology[0].images.portrait;
     }
   }
+
+  function spaceportFunction() {
+    document.querySelector('section.detail-box > h2').innerHTML =
+      data.technology[1].name;
+    document.querySelector('p.text-technology').innerHTML =
+      data.technology[1].description;
+    if (width <= 768) {
+      img.src = data.technology[1].images.landscape;
+    } else {
+      img.src = data.technology[1].images.portrait;
+    }
+  }
+
+  function capsuleFunction() {
+    document.querySelector('section.detail-box > h2').innerHTML =
+      data.technology[2].name;
+    document.querySelector('p.text-technology').innerHTML =
+      data.technology[2].description;
+    if (width <= 768) {
+      img.src = data.technology[2].images.landscape;
+    } else {
+      img.src = data.technology[2].images.portrait;
+    }
+  }
+
+  vehicle.addEventListener('change', vehicleFunction);
+  vehicle.addEventListener('load', vehicleFunction);
+  vehicle.addEventListener('resize', vehicleFunction);
+  /* ----------------------------------  ---------------------------------- */
+  spaceport.addEventListener('change', spaceportFunction);
+  spaceport.addEventListener('load', spaceportFunction);
+  spaceport.addEventListener('resize', spaceportFunction);
+  /* ----------------------------------  ---------------------------------- */
+  capsule.addEventListener('change', capsuleFunction);
+  capsule.addEventListener('load', capsuleFunction);
+  capsule.addEventListener('resize', capsuleFunction);
+}
+getData();
+
+/*
+// img.src = "url('./assets/technology/image-launch-vehicle-portrait.jpg')";
+// img.src = "url('assets\technologyimage-space-capsule-portrait.jpg')";
+const technology = () => {
+  //La boite contenat l'image
 
   function spaceportFunction() {
     document.querySelector('section.detail-box > h2').innerHTML = 'Spaceport';
@@ -59,11 +118,11 @@ const technology = () => {
   vehicle.addEventListener('change', vehicleFunction);
   vehicle.addEventListener('load', vehicleFunction);
   vehicle.addEventListener('resize', vehicleFunction);
-  /* ----------------------------------  ---------------------------------- */
+  /* ----------------------------------  ---------------------------------- 
   spaceport.addEventListener('change', spaceportFunction);
   spaceport.addEventListener('load', spaceportFunction);
   spaceport.addEventListener('resize', spaceportFunction);
-  /* ----------------------------------  ---------------------------------- */
+  /* ----------------------------------  ---------------------------------- 
   capsule.addEventListener('change', capsuleFunction);
   capsule.addEventListener('load', capsuleFunction);
   capsule.addEventListener('resize', capsuleFunction);
