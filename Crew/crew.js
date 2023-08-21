@@ -8,16 +8,24 @@ async function getData() {
   const pilot = document.getElementById('pilot');
   const flight = document.getElementById('flight');
   /**------------------------------------- */
+  /****************************************** */
   const rolePerson = document.querySelector('section.detail-box > h4');
   const namePerson = document.querySelector('section.detail-box > h2');
   const textCrew = document.querySelector('p.text-crew');
-  const imagePerson = document.querySelector('section.img-box img');
+  /****************************** */
+  //Element par défaut de la page
+  const img = document.createElement('img');
+  document.querySelector('section.img-box').appendChild(img);
+  img.src = data.crew[0].images.png;
+  rolePerson.innerHTML = data.crew[0].role;
+  namePerson.innerHTML = data.crew[0].name;
+  textCrew.innerHTML = data.crew[0].bio;
 
   function commanderFunction() {
     rolePerson.innerHTML = data.crew[0].role;
     namePerson.innerHTML = data.crew[0].name;
     textCrew.innerHTML = data.crew[0].bio;
-    imagePerson.src = data.crew[0].images.png;
+    img.src = data.crew[0].images.png;
   }
 
   /***--- */
@@ -25,7 +33,7 @@ async function getData() {
     rolePerson.innerHTML = data.crew[1].role;
     namePerson.innerHTML = data.crew[1].name;
     textCrew.innerHTML = data.crew[1].bio;
-    imagePerson.src = data.crew[1].images.png;
+    img.src = data.crew[1].images.png;
   }
 
   /**---- */
@@ -33,7 +41,7 @@ async function getData() {
     rolePerson.innerHTML = data.crew[2].role;
     namePerson.innerHTML = data.crew[2].name;
     textCrew.innerHTML = data.crew[2].bio;
-    imagePerson.src = data.crew[2].images.png;
+    img.src = data.crew[2].images.png;
   }
 
   /**----- */
@@ -41,7 +49,7 @@ async function getData() {
     rolePerson.innerHTML = data.crew[3].role;
     namePerson.innerHTML = data.crew[3].name;
     textCrew.innerHTML = data.crew[3].bio;
-    imagePerson.src = data.crew[3].images.png;
+    img.src = data.crew[3].images.png;
   }
   /**-------------------------- */
   commander.addEventListener('change', commanderFunction);
