@@ -79,7 +79,7 @@ header {
   z-index: 9999;
 }
 
-header>a {
+header > a {
   grid-column: 3 / span 1;
   grid-row: 2 / span 2;
   align-self: center;
@@ -109,12 +109,13 @@ nav.navNormal {
 
 nav.navMobile {
   position: absolute;
-  top: 0;
+  /* top: 0; */
   right: 0;
+  /* bottom: 0; */
   left: -100%;
   backdrop-filter: blur(50px);
   padding: 2rem;
-  height: 100%;
+  height: 100% !important;
   width: 85%;
   box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.1);
   display: none;
@@ -191,7 +192,7 @@ nav ul li a .numNav {
     display: none;
   }
 
-  header>a {
+  header > a {
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
     align-self: center;
@@ -233,13 +234,13 @@ nav ul li a .numNav {
 
   h5 {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: .8rem;
+    font-size: 0.8rem;
     letter-spacing: 4.75px;
     text-transform: uppercase;
     font-weight: 400;
   }
 
-  header>a {
+  header > a {
     grid-column: 2 / span 1;
     grid-row: 2 / span 2;
     align-self: center;
@@ -259,6 +260,7 @@ nav ul li a .numNav {
     display: flex;
     flex-direction: column;
     padding-top: 7rem;
+    height: 100% !important;
   }
 
   nav.navMobile ul li a {
