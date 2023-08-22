@@ -1,1 +1,154 @@
-html{width:100%;height:100%}body{background:url('./assets/home/background-home-desktop.jpg') no-repeat center/cover;color:#fff;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:150px 2fr 4fr 1fr}main{grid-column:1 / span 12;grid-row:3 / span 1;align-self:center;justify-self:center;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(1,1fr)}main section{grid-column:2 / span 5;grid-row:1 / span 1;padding-right:20%}main section *{margin-bottom:1.4rem}main .boxBtnExplore{grid-column:9 / span 3;grid-row:1 / span 1;align-self:end;justify-self:end;clip-path:circle(40%);display:flex;justify-content:center;align-items:center}div.boxBtnExplore a{text-decoration:none;clip-path:circle(40%);padding:4rem;background-color:transparent;transition:all .3s ease-in-out}div.boxBtnExplore a:hover{background-color:rgba(146,130,130,0.7)}.btnHover p{color:#000;font-weight:400;font-size:1.4rem;text-transform:uppercase;text-align:center;clip-path:circle(40%);padding:6rem;background-color:#fff}@media(max-width:1150px){main section{padding-right:8%}}@media(max-width:890px){main section{padding-right:0}main .boxBtnExplore{grid-column:10 / span 3;grid-row:1 / span 1;align-self:end;justify-self:end}.btnHover p{padding:5rem}}@media(max-width:768px){body{background:url('./assets/home/background-home-tablet.jpg')}main{grid-template-rows:repeat(2,1fr);text-align:center}main section{grid-column:3 / -3;grid-row:1 / span 1;align-self:center;justify-self:center}main .boxBtnExplore{grid-column:3 / -3;grid-row:2 / span 1;align-self:center;justify-self:center;clip-path:circle(40%);display:flex;justify-content:center;align-items:center}}@media(max-width:380px){div.boxBtnExplore a{clip-path:circle(90%);padding:2rem}.btnHover p{clip-path:circle(40%);padding:4rem}}@media(max-width:270px){div.boxBtnExplore a{clip-path:circle(90%);padding:2rem}.btnHover p{clip-path:circle(40%);padding:2.8rem}.btnHover p{font-size:1rem}}
+* {
+  /*box-shadow: 0 0 0 1px red inset;*/
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: url('./assets/home/background-home-desktop.jpg') no-repeat
+    center/cover;
+  /* background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 150px 2fr 4fr 1fr;
+}
+
+main {
+  grid-column: 1 / span 12;
+  grid-row: 3 / span 1;
+  align-self: center;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+main section {
+  grid-column: 2 / span 5;
+  grid-row: 1 / span 1;
+  padding-right: 20%;
+}
+
+main section * {
+  margin-bottom: 1.4rem;
+}
+
+main .boxBtnExplore {
+  grid-column: 9 / span 3;
+  grid-row: 1 / span 1;
+  align-self: end;
+  justify-self: end;
+  clip-path: circle(40%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.boxBtnExplore a {
+  text-decoration: none;
+  clip-path: circle(40%);
+  padding: 4rem;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+div.boxBtnExplore a:hover {
+  background-color: rgba(146, 130, 130, 0.7);
+}
+
+.btnHover p {
+  color: #000;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  clip-path: circle(40%);
+  padding: 6rem;
+  background-color: #fff;
+}
+
+@media (max-width: 1150px) {
+  main section {
+    padding-right: 8%;
+  }
+}
+
+@media (max-width: 890px) {
+  main section {
+    padding-right: 0;
+  }
+
+  main .boxBtnExplore {
+    grid-column: 10 / span 3;
+    grid-row: 1 / span 1;
+    align-self: end;
+    justify-self: end;
+  }
+
+  .btnHover p {
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background: url('./assets/home/background-home-tablet.jpg');
+  }
+
+  main {
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+  }
+
+  main section {
+    grid-column: 3 / -3;
+    grid-row: 1 / span 1;
+    align-self: center;
+    justify-self: center;
+  }
+
+  main .boxBtnExplore {
+    grid-column: 3 / -3;
+    grid-row: 2 / span 1;
+    align-self: center;
+    justify-self: center;
+    clip-path: circle(40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 380px) {
+  div.boxBtnExplore a {
+    clip-path: circle(90%);
+    padding: 2rem;
+  }
+
+  .btnHover p {
+    clip-path: circle(40%);
+    padding: 4rem;
+  }
+}
+
+@media (max-width: 270px) {
+  div.boxBtnExplore a {
+    clip-path: circle(90%);
+    padding: 2rem;
+  }
+
+  .btnHover p {
+    clip-path: circle(40%);
+    padding: 2.8rem;
+  }
+
+  .btnHover p {
+    font-size: 1rem;
+  }
+}
