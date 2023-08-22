@@ -14,6 +14,7 @@ body {
   background-image: url('../assets/crew/background-crew-desktop.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #0b0e17;
   height: 100%;
   color: #fff;
   grid-template-columns: repeat(12, 1fr);
@@ -132,7 +133,6 @@ main .img-box img {
 @media (max-width: 768px) {
   body {
     background-image: url('../assets/crew/background-crew-desktop.jpg');
-    background-color: #0b0e17;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
