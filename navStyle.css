@@ -102,6 +102,7 @@ nav.navNormal {
   grid-row: 2 / span 2;
   padding: 2rem 6rem;
   background-color: transparent;
+  -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
   box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.1);
   text-align: center;
@@ -109,11 +110,10 @@ nav.navNormal {
 
 nav.navMobile {
   position: absolute;
-  /* top: 0; */
   right: 0;
-  /* bottom: 0; */
   left: -100%;
-  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   padding: 2rem;
   height: 100% !important;
   width: 85%;
