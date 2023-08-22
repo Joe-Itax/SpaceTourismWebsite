@@ -64,13 +64,44 @@ async function getData() {
     }
   }
 
+  let currentRadio = 1;
+  function changeRadio() {
+    switch (currentRadio) {
+      case 1:
+        vehicle.checked = true;
+        spaceport.checked = false;
+        capsule.checked = false;
+        currentRadio = 2;
+        break;
+      case 2:
+        vehicle.checked = false;
+        spaceport.checked = true;
+        capsule.checked = false;
+        currentRadio = 3;
+        break;
+      case 3:
+        vehicle.checked = false;
+        spaceport.checked = false;
+        capsule.checked = true;
+        currentRadio = 1;
+        break;
+    }
+    // Déclencher les événements "change" manuellement à chaque fois que la fonction est appelée
+    if (vehicle.checked) {
+      vehicle.dispatchEvent(new Event('change'));
+    } else if (spaceport.checked) {
+      spaceport.dispatchEvent(new Event('change'));
+    } else if (capsule.checked) {
+      capsule.dispatchEvent(new Event('change'));
+    }
+  }
+  setInterval(changeRadio, 20000);
+  /*---------------------  ------------------------------*/
   vehicle.addEventListener('change', vehicleFunction);
-  vehicle.addEventListener('resize', vehicleFunction);
-  /* ----------------------------------  ---------------------------------- */
+  /* ------------------------  ------------------------- */
   spaceport.addEventListener('change', spaceportFunction);
-  spaceport.addEventListener('resize', spaceportFunction);
-  /* ----------------------------------  ---------------------------------- */
+  /* -------------------------  ----------------------------- */
   capsule.addEventListener('change', capsuleFunction);
-  capsule.addEventListener('resize', capsuleFunction);
 }
+/************************/
 getData();
