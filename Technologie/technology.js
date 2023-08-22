@@ -93,13 +93,16 @@ async function getData() {
     // Déclencher les événements change à chaque fois que la fonction est appelée
     if (vehicle.checked) {
       vehicle.dispatchEvent(new Event('change'));
+      // vehicle.addEventListener('change', vehicleFunction);
     } else if (spaceport.checked) {
       spaceport.dispatchEvent(new Event('change'));
+      // spaceport.addEventListener('change', spaceportFunction);
     } else if (capsule.checked) {
       capsule.dispatchEvent(new Event('change'));
+      // capsule.addEventListener('change', capsuleFunction);
     }
   }
-  setInterval(changeRadio, 7000);
+  setInterval(changeRadio, 25000);
   /*---------------------  ------------------------------*/
   vehicle.addEventListener('change', vehicleFunction);
   /* ------------------------  ------------------------- */
@@ -107,7 +110,5 @@ async function getData() {
   /* -------------------------  ----------------------------- */
   capsule.addEventListener('change', capsuleFunction);
 }
-
-
 /************************/
 getData();

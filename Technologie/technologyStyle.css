@@ -80,7 +80,7 @@ main .technologyRadio-box label:hover {
   border-color: #fff;
 }
 
-main .technologyRadio-box input:checked + label {
+main .technologyRadio-box input:checked+label {
   background-color: #fff;
   border-color: #fff;
   color: #000;
@@ -179,9 +179,6 @@ main .img-box img {
   }
 
   main .img-box {
-    grid-column: 1 / span 12;
-    grid-row: 2 / 3;
-    height: 100%;
     width: 100%;
     align-self: center;
     order: 0;
@@ -190,6 +187,7 @@ main .img-box img {
   .meetTitle-box {
     margin-left: 1rem;
   }
+
   .technologyRadio-box,
   .detail-box {
     order: 1;
