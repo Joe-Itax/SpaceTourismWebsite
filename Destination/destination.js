@@ -115,7 +115,7 @@ async function getData() {
     }
   }
 
-  setInterval(changeRadio, 3000);
+  setInterval(changeRadio, 20000);
   moon.addEventListener('change', moonFunction);
   mars.addEventListener('change', marsFunction);
   europa.addEventListener('change', europaFunction);
