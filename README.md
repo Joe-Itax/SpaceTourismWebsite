@@ -1,91 +1,115 @@
-# Frontend Mentor - Site de tourisme spatial
+# Frontend Mentor - Space tourism website solution
 
-# Space tourism multi-page website
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-![Aperçu de conception pour le défi de codage du site Web du tourisme spatial](./preview.jpg)
+## Table of contents
 
-## Accueillir! 👋
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-Les défis [Frontend Mentor](https://www.frontendmentor.io) vous aident à améliorer vos compétences en codage en créant des projets réalistes. Nos défis sont des éléments de portfolio parfaits, alors n'hésitez pas à utiliser ce que vous créez dans votre portfolio pour le montrer aux autres.
+## Overview
 
-**Pour relever ce défi, vous avez besoin de solides connaissances en HTML, CSS et JavaScript.**
+### The challenge
 
-## Le defi
+Users should be able to: | Les utilisateurs doivent pouvoir :
 
-Votre défi consiste à créer ce site Web de tourisme spatial de plusieurs pages et à le rendre aussi proche que possible de la conception.
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and be able to toggle between the tabs to see new information
 
-**Ce projet est une collaboration entre nous, Scrimba et Kevin Powell. Si vous souhaitez voir comment Kevin aborderait le projet, vous pouvez [suivre le cours gratuit de Scrimba](https://scrimba.com/learn/spacetravel).**
+### Screenshot
 
-Si vous y travaillez vous-même, veuillez utiliser les outils de votre choix pour vous aider à relever le défi. Donc, si vous avez quelque chose que vous aimeriez pratiquer, n'hésitez pas à l'essayer.
+![Website Screenshot1](https://github.com/Joseph-Itakala/SpaceTourismWebsite/blob/main/image%20preview%20--%20space-tourisme-website/image1.png)
 
-Si vous choisissez d'utiliser une approche lourde en JS, nous fournissons un fichier local "data.json" pour les différentes données de page. Cela signifie que vous pourrez extraire les données à partir de là au lieu d'utiliser les fichiers `.html` séparés.
+![Website Screenshot2](https://github.com/Joseph-Itakala/SpaceTourismWebsite/blob/main/image%20preview%20--%20space-tourisme-website/image2.png)
 
-Vos utilisateurs doivent pouvoir :
+![Website Screenshot3](https://github.com/Joseph-Itakala/SpaceTourismWebsite/blob/main/image%20preview%20--%20space-tourisme-website/image3.png)
 
-- Visualiser la mise en page optimale de chacune des pages du site en fonction de la taille de l'écran de son appareil
-- Voir les états de survol pour tous les éléments interactifs de la page
-- Afficher chaque page et pouvoir basculer entre les onglets pour voir de nouvelles informations
+![Website Screenshot4](https://github.com/Joseph-Itakala/SpaceTourismWebsite/blob/main/image%20preview%20--%20space-tourisme-website/image4.png)
 
-Vous voulez un soutien pour relever le défi ? [Rejoignez notre communauté Slack](https://www.frontendmentor.io/slack) et posez des questions sur le canal **#help**
+![Website Screenshot5](https://github.com/Joseph-Itakala/SpaceTourismWebsite/blob/main/image%20preview%20--%20space-tourisme-website/image5.png)
 
-## Où tout trouver
+![Website Screenshot6](https://github.com/Joseph-Itakala/SpaceTourismWebsite/blob/main/image%20preview%20--%20space-tourisme-website/image6.png)
 
-Votre tâche consiste à créer le projet dans le fichier de conception fourni. Nous fournissons les versions Sketch et Figma de la conception, afin que vous puissiez choisir l'outil que vous préférez utiliser. Vous pouvez télécharger le fichier de conception sur la plateforme. Le téléchargement de la conception est également fourni avec un fichier `README.md` pour vous aider à vous installer.
+![Website Screenshot7](https://github.com/Joseph-Itakala/SpaceTourismWebsite/blob/main/image%20preview%20--%20space-tourisme-website/image7.png)
 
-Tous les éléments requis pour ce projet se trouvent dans le dossier `/assets`. Les actifs sont déjà exportés pour la bonne taille d'écran et optimisés. Certaines images sont réutilisables sur plusieurs tailles d'écran.
+### Links
 
-Le système de conception dans le fichier de conception vous donnera plus d'informations sur les différentes couleurs, polices et styles utilisés dans ce projet.
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Space Touriism Website](https://space-touriism.netlify.app/)
 
-## Construire votre projet
+## My process
 
-N'hésitez pas à utiliser n'importe quel flux de travail avec lequel vous vous sentez à l'aise. Vous trouverez ci-dessous un processus suggéré, mais ne vous sentez pas obligé de suivre ces étapes :
+### Built with
 
-1. Séparez le `starter-code` du reste de ce projet et renommez-le en quelque chose de significatif pour vous. Initialisez la base de code en tant que dépôt public sur [GitHub](https://github.com/). La création d'un référentiel facilitera le partage de votre code avec la communauté si vous avez besoin d'aide. Si vous ne savez pas comment procéder, [lisez attentivement cette ressource Try Git](https://try.github.io/).
-2. Configurez votre référentiel pour publier votre code sur une adresse Web. Cela sera également utile si vous avez besoin d'aide lors d'un défi, car vous pouvez partager l'URL de votre projet avec votre URL de dépôt. Il existe plusieurs façons de le faire, et nous fournissons quelques recommandations ci-dessous.
-3. Examinez les conceptions pour commencer à planifier la manière dont vous aborderez le projet. Cette étape est cruciale pour vous aider à anticiper les classes CSS afin de créer des styles réutilisables.
-4. Avant d'ajouter des styles, structurez votre contenu avec HTML. Écrire d'abord votre code HTML peut vous aider à concentrer votre attention sur la création d'un contenu bien structuré.
-5. Écrivez les styles de base de votre projet, y compris les styles de contenu généraux, tels que `font-family` et `font-size`.
-6. Commencez à ajouter des styles en haut de la page et descendez. Ne passez à la section suivante que lorsque vous êtes satisfait d'avoir terminé le domaine sur lequel vous travaillez.
+- Semantic HTML5 markup
+- Flexbox
+- CSS Grid
+- JSON
 
-## Déploiement de votre projet
+### What I learned
 
-Comme mentionné ci-dessus, il existe de nombreuses façons d'héberger votre projet gratuitement. Nos hôtes recommandés sont :
+During this project, I was able to acquire new skills by working with the JSON format. I also learned the importance of accessibility to ensure that our site is accessible to as many users as possible.
 
-- [Pages GitHub](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+To work with JSON data, I used JS's async function to call the fetch and await methods, as in the following sample code:
 
-Vous pouvez héberger votre site en utilisant l'une de ces solutions ou l'un de nos autres fournisseurs de confiance. [En savoir plus sur nos hébergeurs recommandés et de confiance](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+```js
+async function getData() {
+  const response = await fetch('../data.json');
+  const data = await response.json();
+  console.log(data);
+}
+getData();
+```
 
-## Créer un `README.md` personnalisé
+Also, I discovered how to simulate an event and use it effectively in my code.
 
-Nous vous recommandons fortement de remplacer ce `README.md` par un fichier personnalisé. Nous avons fourni un modèle dans le fichier [`README-template.md`](./README-template.md) dans ce code de démarrage.
+```js
+element.dispatchEvent(new Event('event'));
+```
 
-Le modèle fournit un guide pour ce qu'il faut ajouter. Un `README` personnalisé vous aidera à expliquer votre projet et à réfléchir sur vos apprentissages. N'hésitez pas à modifier notre modèle autant que vous le souhaitez.
+Regarding the design of the site, I learned to use the prefix **_-webkit_**
 
-Une fois que vous avez ajouté vos informations au modèle, supprimez ce fichier et renommez le fichier `README-template.md` en `README.md`. Cela le fera apparaître comme le fichier README de votre référentiel.
+```css
+selector {
+  -webkit-backdrop-filter: blur(50px);
+}
+```
 
-## Soumettre votre solution
+to make the property
 
-Soumettez votre solution sur la plateforme pour que le reste de la communauté puisse la voir. Suivez notre ["Guide complet pour soumettre des solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) pour obtenir des conseils sur la façon de procéder.
+```css
+selector {
+  backdrop-filter: blur(50px);
+}
+```
 
-N'oubliez pas que si vous souhaitez obtenir des commentaires sur votre solution, assurez-vous de poser des questions lorsque vous la soumettez. Plus vos questions sont précises et détaillées, plus vous avez de chances d'obtenir des commentaires précieux de la part de la communauté.
+available to iPhone users.
+This project allowed me to strengthen my skills and continue to improve my knowledge in these key areas.
 
-## Partage de votre solution
+### Continued development
 
-Vous pouvez partager votre solution à plusieurs endroits :
+In my future projects, I want to continue to focus on working with the JSON format. Although I have worked with datasets before, I want to sharpen my skills and start working with APIs. Additionally, I discovered how to simulate an event and use it effectively, and I plan to continue to perfect this technique as well.
 
-1. Partagez votre page de solution dans le canal **#finished-projects** de la [communauté Slack](https://www.frontendmentor.io/slack).
-2. Tweetez [@frontendmentor](https://twitter.com/frontendmentor) et mentionnez **@frontendmentor**, y compris le référentiel et les URL en direct dans le tweet. Nous serions ravis de jeter un œil à ce que vous avez construit et de vous aider à le partager.
-3. Partagez votre solution sur d'autres réseaux sociaux comme LinkedIn.
-4. Blog sur votre expérience dans la construction de votre projet. Écrire sur votre flux de travail, vos choix techniques et parler de votre code est un excellent moyen de renforcer ce que vous avez appris. [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/) et [CodeNewbie](https://community.codenewbie.org/) sont les meilleures plateformes pour écrire.
+### Useful resources
 
-Nous fournissons des modèles pour vous aider à partager votre solution une fois que vous l'avez soumise sur la plateforme. Veuillez les modifier et inclure des questions spécifiques lorsque vous recherchez des commentaires.
+- [element.dispatchEvent on MDN](https://developer.mozilla.org/fr/docs/Web/API/EventTarget/dispatchEvent) - It helped me to simulate a client side event, and thus take advantage of it.
 
-Plus vous êtes précis dans vos questions, plus il est probable qu'un autre membre de la communauté vous fasse part de ses commentaires.
+## Author
 
-## Vous avez des commentaires pour nous ?
+- Frontend Mentor - [@Joseph-Itakala](https://www.frontendmentor.io/profile/Joseph-Itakala)
+- Github - [@Joseph-Itakala](https://github.com/Joseph-Itakala)
+- Linkdin - [@Joseph-Itakala](https://linkedin.com/in/joseph-itakala-2a6465250)
 
-Nous aimons recevoir des commentaires ! Nous cherchons toujours à améliorer nos défis et notre plateforme. Donc, si vous souhaitez mentionner quelque chose, veuillez envoyer un e-mail à hi[at]frontendmentor[dot]io.
+## Acknowledgments
 
-**Amusez-vous à construire !** 🚀
+I would like to express my gratitude to my fellow learner at Kadea, [Junior Asosa](https://github.com/BlackJr-Git/), who gave me invaluable help, in particular by testing the accessibility of the site on his iPhone.
