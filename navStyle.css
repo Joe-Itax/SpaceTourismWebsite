@@ -86,13 +86,19 @@ header > a {
   justify-self: end;
 }
 
+header > a img {
+  width: 50px;
+  height: 50px;
+}
+
 header img.iconHamburger {
   cursor: pointer;
   grid-column: -3 / span 1;
   grid-row: 2 / span 1;
   align-self: center;
   justify-self: center;
-  width: 37px;
+  width: 30px;
+  height: 26px;
   z-index: 999;
   display: none;
 }

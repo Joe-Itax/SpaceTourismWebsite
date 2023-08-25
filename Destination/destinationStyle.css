@@ -44,6 +44,7 @@ main .pickTitle-box span {
 
 .img-box img {
   width: 25rem;
+  height: auto;
   align-self: center;
 }
 
