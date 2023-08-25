@@ -13,6 +13,7 @@ async function getData() {
   const img = document.createElement('img');
   document.querySelector('section.img-box').appendChild(img);
   img.src = data.crew[0].images.png;
+  img.alt = 'pictures of the crews';
   document.querySelector('section.detail-box > h4').innerHTML =
     data.crew[0].role;
   document.querySelector('section.detail-box > h2').innerHTML =

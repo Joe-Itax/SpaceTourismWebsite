@@ -16,7 +16,7 @@ async function getData() {
   ////////////////////////////////////////
   imgBox.appendChild(img);
   img.src = data.technology[0].images.portrait;
-  img.alt = 'Image technology';
+  img.alt = 'pictures of technologies';
   document.querySelector('section.detail-box > h2').innerHTML =
     data.technology[0].name;
   document.querySelector('p.text-technology').innerHTML =
